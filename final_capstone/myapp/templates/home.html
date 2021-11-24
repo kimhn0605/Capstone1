@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/styles/home.css?after">
+  <title>Home</title>
+</head>
+
+<body>
+ 
+ <div class = all>  <!--모든 요소 감싸는 클래스-->
+    <div class = "navbar navbar-fixed-top">  <!--상단 Nav바-->
+      <img src = "../static/images/지우정보기술 로고사진.png" id = "Logo" height = "90" align = "left"> <!--로고 이미지-->
+      <div class = "title"> <!--제목 감싸는 클래스-->
+        <p style="padding-top: 40px;">가상 사격 훈련을 위한 피탄 인지용 LoRa 통신 시스템</p>
+      </div>
+    
+    </div>
+
+    <div class = pink_background> <!--Nav바 제외 전체 내용 감싸는 클래스-->
+      <img src ="../static/images/뒷배경.png" id = "back" height = "100%" width=100%> <!-- 뒷배경 이미지-->
+
+
+      
+      <div class = main_box>
+      
+       <div class = human>
+        <img src = "../static/images/신체 모형.png" id = "human" height = 100% width=100%> <!-- 신체 모형 이미지-->
+        <!--<p class = "font_primary">Primary Model </p>-->
+      </div>
+      <img src = "../static/images/image-removebg-preview (1).png" id = "main_gun" height = 40% width=40%>
+        
+
+        <div class = position>
+          <div class = "position_title">
+            <h3 style="font-size:19px; color: white; margin-left:22px; margin-top:9px;">피격 횟수</h3>
+          </div>
+            <h2 style="font-size: 22px; margin-left:-40px; margin-top:5px;">목 뒤 : {{num_head_neck}} 번 &ensp;&nbsp; &nbsp; &emsp; 허리 : {{num_waist}} 번 &nbsp;&emsp;&emsp;&emsp; 심장 : {{num_left_chest}} 번 &ensp;&nbsp;&ensp; &ensp; 우측 가슴 : {{num_right_chest}} 번</h3>
+            <h2 style="font-size: 22px; margin-left:-40px;">좌측 다리 : {{num_left_leg}} 번 &emsp; 우측 다리 : {{num_right_leg}} 번 &emsp; 좌측 팔 : {{num_left_arm}} 번 &nbsp;&nbsp;&nbsp;우측 팔 : {{num_right_arm}} 번</h3>
+            <h2 style="color : blue; margin-left : -20px; margin-top : -5px;">-> 최종 피해 정도 : {{result}}</h2>
+
+          
+    
+        
+      </div>
+    </div>
+
+ 
+
+    <div class = footer>
+
+    </div>
+  </div>
+
+<script src="../static/js/home.js"></script>
+</body>
+</html>
