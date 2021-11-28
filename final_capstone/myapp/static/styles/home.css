@@ -4,6 +4,12 @@
   opacity: 32%;
  
 }
+
+#image { 
+  padding-bottom: 30%;
+  opacity: 100%;
+ 
+}
 .title { /* class 로 불러오는 태그 */
 
   font-size : x-large;

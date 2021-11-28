@@ -27,8 +27,22 @@
       <div class = main_box>
       
        <div class = human>
-        <img src = "../static/images/신체 모형.png" id = "human" height = 100% width=100%> <!-- 신체 모형 이미지-->
-        <!--<p class = "font_primary">Primary Model </p>-->
+        {% if result == ' 사망' %}
+          <img src="../static/images/사망_엑스.jpg" id = "image" height = "100%" width=100%>
+        {% elif position == '001' %}
+          <img src="../static/images/허리.png" id = "image" height = "100%" width=100%>
+        {% elif position == '011' %}
+          <img src="../static/images/우측 가슴.png" id = "image" height = "100%" width=100%>
+        {% elif position == '100' %}
+          <img src="../static/images/좌측 팔.png" id = "image" height = "100%" width=100%>
+        {% elif position == '101' %}
+          <img src="../static/images/우측 팔.png" id = "image" height = "100%" width=100%>
+        {% elif position == '110' %}
+          <img src="../static/images/좌측 다리.png" id = "image" height = "100%" width=100%>
+        {% elif position == '111' %}
+          <img src="../static/images/우측 다리.png" id = "image" height = "100%" width=100%>
+
+        {% endif %}
       </div>
       <img src = "../static/images/image-removebg-preview (1).png" id = "main_gun" height = 40% width=40%>
         
@@ -47,7 +61,6 @@
       </div>
     </div>
 
- 
 
     <div class = footer>
 
